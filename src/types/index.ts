@@ -1,21 +1,18 @@
-export interface User {
-  id: string
-  username: string
-  email: string
-  password: string
-  createdAt: Date
+export interface UserInput {
+	username: string;
+	password: string;
 }
 
-export interface Score {
-  id: string
-  score: number
-  userId: string
-  gameId: string
-  timestamp: Date
+export interface GameInput {
+	name: string;
+	description: string;
 }
 
-export interface Game {
-  id: string
-  name: string
-  description: string
+export interface ScoreInput {
+	gameId: number;
+	score: number;
+}
+
+export interface JwtPayload {
+	userId: number;
 }
